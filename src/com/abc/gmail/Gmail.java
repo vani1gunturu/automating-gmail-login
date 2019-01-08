@@ -21,6 +21,7 @@ public class Gmail
 		ChromeDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+		//go to gmail.com
 		driver.get("https://www.gmail.com");
 		driver.findElement(By.id(usernamelocation)).sendKeys(username);
 		driver.findElement(By.className(next1)).click();
