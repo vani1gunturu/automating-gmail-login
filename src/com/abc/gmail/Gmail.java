@@ -17,7 +17,7 @@ public class Gmail
 		String password = properties.getProperty("password");
 		String passwordlocation = properties.getProperty("passwordlocation");
 		String next2 = properties.getProperty("next2");
-		System.setProperty("webdriver.chrome.driver", "/home/vani/selenium components/chromedriver_linux64/chromedriver");
+		System.setProperty("webdriver.chrome.driver","/home/vani/selenium components/chromedriver_linux64/chromedriver");
 		ChromeDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
